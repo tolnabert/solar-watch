@@ -48,15 +48,11 @@ Welcome to the Solar Watch project! This repository is divided into two main par
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#Clone">Clone</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -101,13 +97,118 @@ To get a local copy up and running follow these simple example steps.
 
 
 ### Prerequisites
-In progress how to list things you need to use the software and how to install them.
+**Before setting up the project, ensure you have the following installed:**
+
+**Check if Docker is Already Installed:**
+   - Open a command prompt (CMD) or PowerShell and run the following command:
+     ```bash
+     docker --version
+     ```
+   - If Docker is installed, you will see the version information. If Docker is not installed, you will see an error message indicating that the command is not recognized.
+
+<details>
+<summary>For Windows</summary>
+
+1. **Check if Docker is Already Installed:**
+   - Open a command prompt (CMD) or PowerShell and run the following command:
+     ```bash
+     docker --version
+     ```
+   - If Docker is installed, you will see the version information. If Docker is not installed, you will see an error message indicating that the command is not recognized.
+
+2. **Download Docker Desktop for Windows:**
+   - If Docker is not installed, go to the [Docker Desktop for Windows download page](https://www.docker.com/products/docker-desktop).
+   - Click on the "Get Docker Desktop for Windows" button to download the installer.
+
+3. **Install Docker Desktop:**
+   - Open the downloaded `.exe` file to start the Docker Desktop Installer.
+   - Follow the installation wizard steps.
+   - During installation, you may be prompted to enable WSL 2 (Windows Subsystem for Linux) and install a Linux kernel update package. Follow the instructions provided by the installer.
+   - Docker Desktop requires Hyper-V and WSL 2. Ensure that both are enabled. If not, the installer will guide you on how to enable them.
+
+4. **Start Docker Desktop:**
+   - After installation, launch Docker Desktop from the Start menu.
+   - Docker will start and run in the background. You may need to log in with your Docker Hub account or create one if you don't have it.
+
+5. **Verify Installation:**
+   - Open a command prompt (CMD) or PowerShell and run the following command again to ensure Docker is installed correctly:
+     ```bash
+     docker --version
+     ```
+
+</details>
+
+<details>
+<summary>For macOS</summary>
+
+1. **Check if Docker is Already Installed:**
+   - Open the Terminal and run the following command:
+     ```bash
+     docker --version
+     ```
+   - If Docker is installed, you will see the version information. If Docker is not installed, you will see an error message indicating that the command is not recognized.
+
+2. **Download Docker Desktop for macOS:**
+   - If Docker is not installed, go to the [Docker Desktop for macOS download page](https://www.docker.com/products/docker-desktop).
+   - Click on the "Download for Mac" button to download the installer.
+
+3. **Install Docker Desktop:**
+   - Open the downloaded `.dmg` file.
+   - Drag the Docker icon to the Applications folder.
+   - Open Docker from the Applications folder.
+   - Follow the on-screen instructions to complete the setup. You may be prompted to grant necessary permissions.
+
+4. **Start Docker Desktop:**
+   - After installation, launch Docker from the Applications folder.
+   - Docker will start and run in the background. You may need to log in with your Docker Hub account or create one if you don't have it.
+
+5. **Verify Installation:**
+   - Once Docker Desktop is running, open the Terminal and run the following command again to ensure Docker is installed correctly:
+     ```bash
+     docker --version
+     ```
+
+</details>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+### Clone
 
-### Installation
 
-In progress...
+To get started with the project, follow these steps:
+
+1. **Clone the Repositories**
+
+   Clone both the backend and frontend repositories using the following commands:
+
+   ```
+   git clone https://github.com/tolnabert/solar-watch-backend
+   git clone https://github.com/tolnabert/solar-watch-frontend
+   ```
+
+2. **Navigate to the Project Directory**
+
+  Move into the directory where your docker-compose.yml file is located. This file should be at the root level of your project folder.
+
+  ```
+  cd path-to-your-project-directory
+  ```
+
+3. **Start the Services**
+
+Run the following command to build and start the Docker containers for both backend and frontend services:
+
+  ```
+  docker-compose up -d
+  ```
+
+4. **Verify Installation**
+
+It is exposed, because not a deployed application, can have better view on the paplication
+Backend: Access the backend service at http://localhost:8080.
+Frontend: Access the frontend service at http://localhost:5008.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,11 +216,35 @@ In progress...
 
 ## Usage
 
-In progress to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+If you can access the http://localhost:5008, you can use the features.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+- login
+    - You may login as admin to access all features:
+      ```
+      username: admin
+      password: secret123
+      ```
+    - or login with test user:
+      ```
+      username: testuser
+      password: secret123
+      ```
+- register
+
+As a user:
+- search with a city name for solar information
+    - country code country code divided by comma. Please use ISO 3166 country codes
+    - state code (only for the US country)
+- visit about us, contact, change password pages (not finished, not in scope to finish in this project)
+
+As an admin:
+- you can add solar information to be able to manage solar information that are not included for the external APIs.
+- you can list all solar information that is in our database
+    - a request that is not in our database will be saved to it, form next time the server will serve that.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 ## Roadmap
 
