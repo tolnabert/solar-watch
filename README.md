@@ -61,7 +61,7 @@ Welcome to the Solar Watch project! This repository is divided into two main par
 
 Solar Watch is a web application designed to provide sunrise and sunset information for various cities. This project encompasses a backend developed with Java Spring Boot and a frontend built with React and JavaScript.
 
-- <a href="https://trello.com/b/GluZg8SJ/solar-watch-si-project" target="_blank">Trello for the project</a>
+- [Trello for the project](https://trello.com/b/GluZg8SJ/solar-watch-si-project)
 
 Completed as part of the final module of my course, this project was developed during the self-directed weeks. It offers users the ability to register, log in, and obtain solar timings for any city by integrating with two external APIs:
 
