@@ -26,7 +26,6 @@ Welcome to the Solar Watch project! This repository is divided into two main par
     <a href="https://github.com/tolnabert/solar-watch-backend">
       <img src="https://img.shields.io/badge/Backend_repository-%23007396?style=for-the-badge&logo=spring&logoColor=white" alt="Backend">
     </a>
-    ·
     <a href="https://github.com/tolnabert/solar-watch-frontend">
       <img src="https://img.shields.io/badge/Frontend_repository-%23F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="Frontend">
     </a>
@@ -45,10 +44,10 @@ Welcome to the Solar Watch project! This repository is divided into two main par
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#prerequisites">Prerequisites</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#Clone">Clone</a></li>
+        <li><a href="#getting-started">Getting Started</a></li>
+        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -60,11 +59,16 @@ Welcome to the Solar Watch project! This repository is divided into two main par
 
 ## About The Project
 
-Completed during the final module of my course, this project was developed over the self-directed weeks. The application enables users to register, log in, and retrieve sunrise and sunset times for any city. It integrates with two external APIs:
+Solar Watch is a web application designed to provide sunrise and sunset information for various cities. This project encompasses a backend developed with Java Spring Boot and a frontend built with React and JavaScript.
+
+- <a href="https://trello.com/b/GluZg8SJ/solar-watch-si-project" target="_blank">Trello for the project</a>
+
+Completed as part of the final module of my course, this project was developed during the self-directed weeks. It offers users the ability to register, log in, and obtain solar timings for any city by integrating with two external APIs:
+
 - [OpenWeatherMap Geocoding API](https://openweathermap.org/api/geocoding-api)
 - [Sunrise-Sunset API](https://sunrise-sunset.org/api)
 
-Using these APIs, the application provides detailed solar information for specified cities. It features secure endpoints accessible only by admin users. Admins can add solar data not available through external sources and review all solar information requests stored in the database.
+By leveraging these APIs, Solar Watch delivers comprehensive solar information for specified locations. The application also includes secure endpoints reserved for admin users. Admins have the capability to add solar data not provided by external sources and review all stored solar information requests in the database.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -72,7 +76,7 @@ Using these APIs, the application provides detailed solar information for specif
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This section is listing  major frameworks/libraries use in my project.
 
 * [![Node][Node.js]][Node-url]
 * [![Javascript][Javascript.com]][Javascript-url]
@@ -90,93 +94,23 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 
 
-## Getting Started
-
-In progress how you may give instructions on setting up your project locally wih docker hub.
-To get a local copy up and running follow these simple example steps.
-
-
 ### Prerequisites
-**Before setting up the project, ensure you have the following installed:**
 
-**Check if Docker is Already Installed:**
-   - Open a command prompt (CMD) or PowerShell and run the following command:
-     ```bash
+Open a command prompt (CMD), PowerShell, or Terminal and run the following command to check if Docker is installed:
+     ```
      docker --version
      ```
-   - If Docker is installed, you will see the version information. If Docker is not installed, you will see an error message indicating that the command is not recognized.
-
-<details>
-<summary>For Windows</summary>
-
-1. **Check if Docker is Already Installed:**
-   - Open a command prompt (CMD) or PowerShell and run the following command:
-     ```bash
-     docker --version
-     ```
-   - If Docker is installed, you will see the version information. If Docker is not installed, you will see an error message indicating that the command is not recognized.
-
-2. **Download Docker Desktop for Windows:**
-   - If Docker is not installed, go to the [Docker Desktop for Windows download page](https://www.docker.com/products/docker-desktop).
-   - Click on the "Get Docker Desktop for Windows" button to download the installer.
-
-3. **Install Docker Desktop:**
-   - Open the downloaded `.exe` file to start the Docker Desktop Installer.
-   - Follow the installation wizard steps.
-   - During installation, you may be prompted to enable WSL 2 (Windows Subsystem for Linux) and install a Linux kernel update package. Follow the instructions provided by the installer.
-   - Docker Desktop requires Hyper-V and WSL 2. Ensure that both are enabled. If not, the installer will guide you on how to enable them.
-
-4. **Start Docker Desktop:**
-   - After installation, launch Docker Desktop from the Start menu.
-   - Docker will start and run in the background. You may need to log in with your Docker Hub account or create one if you don't have it.
-
-5. **Verify Installation:**
-   - Open a command prompt (CMD) or PowerShell and run the following command again to ensure Docker is installed correctly:
-     ```bash
-     docker --version
-     ```
-
-</details>
-
-<details>
-<summary>For macOS</summary>
-
-1. **Check if Docker is Already Installed:**
-   - Open the Terminal and run the following command:
-     ```bash
-     docker --version
-     ```
-   - If Docker is installed, you will see the version information. If Docker is not installed, you will see an error message indicating that the command is not recognized.
-
-2. **Download Docker Desktop for macOS:**
-   - If Docker is not installed, go to the [Docker Desktop for macOS download page](https://www.docker.com/products/docker-desktop).
-   - Click on the "Download for Mac" button to download the installer.
-
-3. **Install Docker Desktop:**
-   - Open the downloaded `.dmg` file.
-   - Drag the Docker icon to the Applications folder.
-   - Open Docker from the Applications folder.
-   - Follow the on-screen instructions to complete the setup. You may be prompted to grant necessary permissions.
-
-4. **Start Docker Desktop:**
-   - After installation, launch Docker from the Applications folder.
-   - Docker will start and run in the background. You may need to log in with your Docker Hub account or create one if you don't have it.
-
-5. **Verify Installation:**
-   - Once Docker Desktop is running, open the Terminal and run the following command again to ensure Docker is installed correctly:
-     ```bash
-     docker --version
-     ```
-
-</details>
+-  If Docker is installed, you'll see the version information.
+-  If not, you'll need to install Docker Desktop for your operating system.
+     - [Docker Desktop for Windows download page](https://www.docker.com/products/docker-desktop).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-### Clone
 
+### Getting Started
 
-To get started with the project, follow these steps:
+To get started with the project, you may follow these steps:
 
 1. **Clone the Repositories**
 
@@ -209,12 +143,17 @@ It is exposed, because not a deployed application, can have better view on the p
 Backend: Access the backend service at http://localhost:8080.
 Frontend: Access the frontend service at http://localhost:5008.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## Installation
+Since the project is containerized with Docker, there are no additional installation steps required beyond having Docker and Docker Compose set up. The application is fully contained within Docker containers and can be started with docker-compose up -d.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-## Usage
+### Usage
 
 If you can access the http://localhost:5008, you can use the features.
 
@@ -254,8 +193,9 @@ As an admin:
   - [x] View All Solar Information
   - [x] Manually Add Solar Information
   - [ ] Delete Solar Information
+- [x] CSS 
 - [x] Multi-Layer Dockerization
-- [ ] Display Search Results in Chronological Order
+- [x] Display Search Results in Chronological Order
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
