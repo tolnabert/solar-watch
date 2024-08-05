@@ -255,15 +255,26 @@ As an admin:
 
 ## Roadmap
 
-- [x] User Registration
-- [x] User Login
-- [x] Admin Role Security
-  - [x] View All Solar Information
-  - [x] Manually Add Solar Information
-  - [ ] Delete Solar Information
-- [x] CSS 
-- [x] Multi-Layer Dockerization
+### Core Features
+
+- [x] **User Registration**
+- [x] **User Login**
+- [x] **Security**
+    - [x] Admin Role: Full Access
+      - [x] List All Solar Information
+      - [x] Manually Add Solar Information
+      - [ ] Delete Solar Information
+    - [x] User Role: Access to Personal Data and Search Features
+      - [x] Search Solar Information
+      - [x] Access to Change Password 
+    - [x] Guest Role: Limited Access to Public Pages 
+- [x] CSS Styling
 - [x] Display Search Results in Chronological Order
+- [x] Multi-Layer Dockerization
+- [x] Continuous Integration (CI)
+  - [x] Integrate Docker Hub Image Update
+- [x] Integration Testing
+- [x] Unit Testing
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
