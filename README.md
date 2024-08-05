@@ -111,20 +111,63 @@ Before setting up the project, ensure you have the following programs installed:
 
 ### Project Setup
 
-You may setup my project by following these steps:
+You need to configure several environment variables, see below:
 
+- DB_NAME: The name of the PostgreSQL database.
+  
+    ```
+    DB_NAME=solarwatch
+    ```
 
+- DB_USERNAME: The PostgreSQL username.
+  
+    ```
+    DB_USERNAME=postgres
+    ```
+
+- DB_PASSWORD: The PostgreSQL password.
+
+    ```
+    DB_PASSWORD=postgres
+    ```
+ 
+- DB_URL: The JDBC URL for connecting to the PostgreSQL database.
+
+  ```
+  DB_URL=jdbc:postgresql://localhost:5432/solarwatch
+  ```
+- JWT_SECRET: A secret key used for signing JWTs. Replace your_jwt_secret_here with a secure value.
+
+  ```
+  JWT_SECRET=your_jwt_secret_here
+  ```
+  
+If you need you can run the following node.js script to generate a random string and copy it:
+
+  ```
+  node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+  ```
+
+Replace paste-the-generated-string-here with the string you copied.
+
+  ```
+  JWT_SECRET = paste-the-generated-string-here
+  ```
 
 #### Backend Setup
 
 1. Clone the Backend Repository
+
+  First, clone the backend repository to your local machine:
   
   ```
   git clone https://github.com/tolnabert/solar-watch-backend
   ```
 
 2. Navigate to the Backend Directory
- 
+
+  Change into the root directory of the cloned repository:
+
   ```
   cd solar-watch-backend
   ```
