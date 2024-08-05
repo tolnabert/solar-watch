@@ -45,8 +45,12 @@ Welcome to the Solar Watch project! This repository is divided into two main par
     <li>
       <a href="#project-setup">Project Setup</a>
       <ul>
-        <li><a href="#backend-setup">Backend Setup</a></li>
-        <li><a href="#frontend-setup">Frontend Setup</a></li>
+        <li><a href="#manual-setup">Manual Setup</a></li>
+          <ul>
+            <li><a href="#backend">Backend</a></li>
+            <li><a href="#frontend">Frontend</a></li>
+          </ul>
+        <li><a href="#docker-setup">Docker Setup</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -96,6 +100,8 @@ This section is listing  major frameworks/libraries use in my project.
 
 Before setting up the project, ensure you have the following programs installed:
 
+#### Manually Setup
+
 - **Java Development Kit (JDK)**: Required for running the backend.
   - Install JDK from: [Oracle JDK download page](https://www.oracle.com/java/technologies/downloads/)
 
@@ -104,6 +110,14 @@ Before setting up the project, ensure you have the following programs installed:
 
 - **Node.js**: Required for running the frontend.
   - Install Node.js from: [Node.js download page](https://nodejs.org/en/download/package-manager)
+
+#### Docker Setup
+
+- **Docker**  
+   - Install Docker from: [Docker Desktop download page](https://www.docker.com/products/docker-desktop).
+
+- **Docker Compose**  
+   - Docker Compose is included with Docker Desktop, but you can also install it separately for Linux from: [Docker Compose download page](https://docs.docker.com/compose/install/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,7 +168,9 @@ Replace paste-the-generated-string-here with the string you copied.
   JWT_SECRET = paste-the-generated-string-here
   ```
 
-#### Backend Setup
+#### Manual Setup
+
+##### Backend
 
 1. Clone the Backend Repository
 
@@ -188,7 +204,7 @@ Access the backend service at http://localhost:8080/api/test/public.
 
 
 
-#### Frontend Setup
+##### Frontend
 1. Clone the Frontend Repository
 
   ```
@@ -216,6 +232,35 @@ Access the backend service at http://localhost:8080/api/test/public.
 5. Verify Frontend Installation
 
 Access the frontend service at http://localhost:5173.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+#### Docker Setup
+
+To set up the project using Docker, follow these steps:
+
+1. Clone the repository to your local machine:
+  ```
+  https://github.com/tolnabert/solar-watch
+  ```
+
+2. Navigate to the Root of the Repository
+  ```
+  cd your-repo
+  ```
+
+3. Start the application with Docker Compose
+
+Run the following command to start all services defined in the docker-compose.yml file:
+
+  ```
+  docker-compose up -D
+  ```
+
+4. Access the Application
+
+[Application[(http://localhost:5008)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
