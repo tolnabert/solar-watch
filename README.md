@@ -45,16 +45,12 @@ Welcome to the Solar Watch project! This repository is divided into two main par
       <a href="#prerequisites">Prerequisites</a>
     </li>
     <li>
-      <a href="#project-setup">Project Setup</a>
-      <ul>
-        <li><a href="#docker-setup">Docker Setup</a></li>
-        <li><a href="#manual-setup">Manual Setup</a>
-          <ul>
-            <li><a href="#backend-setup">Backend Setup</a></li>
-            <li><a href="#frontend-setup">Frontend Setup</a></li>
-          </ul>
-        </li>
-      </ul>
+      <li><a href="#project-setup">Project Setup</a>
+        <ul>
+          <li><a href="#backend-setup">Backend Setup</a></li>
+          <li><a href="#frontend-setup">Frontend Setup</a></li>
+        </ul>
+      </li>
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -94,7 +90,6 @@ This section is listing  major frameworks/libraries use in my project.
 * [![Hibernate][Hibernate]][Hibernate-url]
 * [![Express][Express.com]][Express-url]
 * [![Docker][Docker.com]][Docker-url]
-* [![Trello][Trello]][Trello-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,95 +97,39 @@ This section is listing  major frameworks/libraries use in my project.
 
 ### Prerequisites
 
-Before setting up the project, ensure you have the following programs installed based on the setup method you choose:
+Before setting up the project, ensure you have the following programs installed:
 
-For Docker Setup:
+- **Java Development Kit (JDK)**: Required for running the backend.
+  - Install JDK from: [Oracle JDK download page](https://www.oracle.com/java/technologies/downloads/)
 
-Docker Desktop: Needed to run the application in Docker containers.
-Check if Docker is installed by running in terminal:
-  ```
-  docker --version
-  ```
-If Docker is not installed, download Docker Desktop for your operating system:
-Docker Desktop for Windows/Mac/Linux, choose the appropriate OS.
-[Docker Desktop download page](https://www.docker.com/products/docker-desktop/)
+- **Maven**: Required for building and running the backend.
+  - Install Maven from: [Apache Maven download page](https://maven.apache.org/download.cgi)
 
-For Manual Setup:
-Java Development Kit (JDK): Required for running the backend.
-Install JDK from:
-[Oracle JDK download page](https://www.oracle.com/java/technologies/downloads/)
-Maven: Required for building and running the backend.
-Install Maven from:
-[Apache Maven download page](https://maven.apache.org/download.cgi)
-Node.js: Required for running the frontend.
-Install Node.js from:
-[Node.js download page](https://nodejs.org/en/download/package-manager)
+- **Node.js**: Required for running the frontend.
+  - Install Node.js from: [Node.js download page](https://nodejs.org/en/download/package-manager)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-## Project Setup
+### Project Setup
 
-Choose your preferred method for setting up the web application from the options below and follow the corresponding setup guide:
-
-- **[Docker Setup](#docker-setup)**: If you prefer to use Docker for containerized deployment, follow this guide.
-- **[Manual Setup](#manual-setup)**: If you prefer to set up the project manually, follow these instructions.
-
-### Docker Setup
-
-To set up the project using Docker, follow these steps:
-
-1. **Clone the Repositories**
-
-Clone both the backend and frontend repositories:
-
-   ```
-   git clone https://github.com/tolnabert/solar-watch-backend
-   git clone https://github.com/tolnabert/solar-watch-frontend
-   ```
-
-2. **Navigate to the Project Directory**
-
-Move into the directory where your docker-compose.yml file is located. This file should be at the root level of your project folder:
-
-  ```
-  cd path-to-your-project-directory
-  ```
-
-3. **Start the Services**
-
-Run the following command to build and start the Docker containers for both backend and frontend services:
-
-  ```
-  docker-compose up -d
-  ```
-
-4. **Verify Installation**
-
-It is exposed, because not a deployed application, can have better view on the paplication
-
-  -  Backend: Access the backend service at http://localhost:8080.
-  -  Frontend: Access the frontend service at http://localhost:5008.
-
-Ensure that the application is running correctly.
+You may setup my project by following these steps:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Manual Setup
 
-If you prefer to set up the project manually without Docker, follow these steps:
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #### Backend Setup
 
 1. Clone the Backend Repository
+  
   ```
   git clone https://github.com/tolnabert/solar-watch-backend
   ```
 
 2. Navigate to the Backend Directory
+ 
   ```
   cd solar-watch-backend
   ```
@@ -238,7 +177,7 @@ Access the backend service at http://localhost:8080/api/test/public.
 
 5. Verify Frontend Installation
 
-Access the frontend service at http://localhost:5008.
+Access the frontend service at http://localhost:5173.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -246,7 +185,7 @@ Access the frontend service at http://localhost:5008.
 
 ### Usage
 
-If you can access the http://localhost:5008, you can use the features.
+If you can access the http://localhost:5173, you can use the features:
 
 - login
     - You may login as admin to access all features:
@@ -332,5 +271,3 @@ As an admin:
 [Express-url]: https://expressjs.com/
 [Docker.com]: https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white
 [Docker-url]: https://www.docker.com/
-[Trello]: https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white
-[Trello-url]: https://trello.com/
