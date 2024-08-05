@@ -41,16 +41,13 @@ Welcome to the Solar Watch project! This repository is divided into two main par
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
     <li>
-      <a href="#prerequisites">Prerequisites</a>
-    </li>
-    <li>
-      <li><a href="#project-setup">Project Setup</a>
-        <ul>
-          <li><a href="#backend-setup">Backend Setup</a></li>
-          <li><a href="#frontend-setup">Frontend Setup</a></li>
-        </ul>
-      </li>
+      <a href="#project-setup">Project Setup</a>
+      <ul>
+        <li><a href="#backend-setup">Backend Setup</a></li>
+        <li><a href="#frontend-setup">Frontend Setup</a></li>
+      </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -115,8 +112,6 @@ Before setting up the project, ensure you have the following programs installed:
 ### Project Setup
 
 You may setup my project by following these steps:
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
