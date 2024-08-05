@@ -14,13 +14,10 @@ Welcome to the Solar Watch project! This repository is divided into two main par
 
 <br />
 <div align="center">
+  <h3 align="center">Solar Watch</h3>
   <a href="https://github.com/tolnabert/solar-watch">
     <img src="images/logo.jpg" alt="Logo" width="100" height="100">
   </a>
-  <h3 align="center">Solar Watch</h3>
-  <p align="center">
-    A README to start my project!
-    <br />
     <a href="https://github.com/tolnabert/solar-watch-backend">
       <img src="https://img.shields.io/badge/Backend_repository-%23007396?style=for-the-badge&logo=spring&logoColor=white" alt="Backend">
     </a>
@@ -62,16 +59,17 @@ Welcome to the Solar Watch project! This repository is divided into two main par
 
 ## About The Project
 
-Solar Watch is a web application designed to provide sunrise and sunset information for various cities. This project encompasses a backend developed with Java Spring Boot and a frontend built with React and JavaScript.
+Solar Watch is a web application designed to provide sunrise and sunset information for various cities. This project encompasses a backend developed with Java Spring Boot 3 and a frontend built with React and JavaScript.ű
+During the development I used Trello to track my ideas and plan my sprints:
 
 - [Trello for the project](https://trello.com/b/GluZg8SJ/solar-watch-si-project)
 
-Completed as part of the final module of my course, this project was developed during the self-directed weeks. It offers users the ability to register, log in, and obtain solar timings for any city by integrating with two external APIs:
+This project was completed as part of the final module of my course, during the self-directed weeks. It offers users the ability to register, login, and obtain solar timings for any city by integrating with two external APIs:
 
 - [OpenWeatherMap Geocoding API](https://openweathermap.org/api/geocoding-api)
 - [Sunrise-Sunset API](https://sunrise-sunset.org/api)
 
-By leveraging these APIs, Solar Watch delivers comprehensive solar information for specified locations. The application also includes secure endpoints reserved for admin users. Admins have the capability to add solar data not provided by external sources and review all stored solar information requests in the database.
+By leveraging these APIs, Solar Watch delivers comprehensive solar information for specified locations. The application also includes secure endpoints reserved for admin users. Admins have the capability to add solar data not provided by external sources and review all stored solar information requests in the my database.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,7 +96,7 @@ This section is listing  major frameworks/libraries use in my project.
 
 ### Prerequisites
 
-Before setting up the project, ensure you have the following programs installed:
+Before setting up the project, ensure you have the following programs installed based on your pereference that you choose:
 
 #### Manually Setup
 
@@ -125,7 +123,7 @@ Before setting up the project, ensure you have the following programs installed:
 
 ### Project Setup
 
-You need to configure several environment variables, see below:
+You need to configure environment variables, for that I noted the necessary ones see below:
 
 - DB_NAME: The name of the PostgreSQL database.
   
@@ -150,6 +148,7 @@ You need to configure several environment variables, see below:
   ```
   DB_URL=jdbc:postgresql://localhost:5432/solarwatch
   ```
+  
 - JWT_SECRET: A secret key used for signing JWTs. Replace your_jwt_secret_here with a secure value.
 
   ```
@@ -190,7 +189,7 @@ Replace paste-the-generated-string-here with the string you copied.
 
 3. Build and Run the Backend
 
-Ensure you have JDK and Maven installed. Run the following command to build and start the backend service:
+  Ensure you have JDK and Maven installed. Run the following command to build and start the backend service:
 
   ```
   mvn spring-boot:run
@@ -198,7 +197,7 @@ Ensure you have JDK and Maven installed. Run the following command to build and 
 
 4. Verify Backend Installation
 
-Access the backend service at http://localhost:8080/api/test/public.
+  Access the backend service at http://localhost:8080/api/test/public.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -231,7 +230,7 @@ Access the backend service at http://localhost:8080/api/test/public.
 
 5. Verify Frontend Installation
 
-Access the frontend service at http://localhost:5173.
+  Access the frontend service at http://localhost:5173.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -241,18 +240,20 @@ Access the frontend service at http://localhost:5173.
 To set up the project using Docker, follow these steps:
 
 1. Clone the repository to your local machine:
+
   ```
   https://github.com/tolnabert/solar-watch
   ```
 
 2. Navigate to the Root of the Repository
+
   ```
   cd your-repo
   ```
 
 3. Start the application with Docker Compose
 
-Run the following command to start all services defined in the docker-compose.yml file:
+  Run the following command to start all services defined in the docker-compose.yml file:
 
   ```
   docker-compose up -D
@@ -260,7 +261,7 @@ Run the following command to start all services defined in the docker-compose.ym
 
 4. Access the Application
 
-[Application[(http://localhost:5008)
+  Application: http://localhost:5008
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -276,6 +277,7 @@ If you can access the http://localhost:5173, you can use the features:
       username: admin
       password: secret123
       ```
+      
     - or login with test user:
       ```
       username: testuser
@@ -305,21 +307,21 @@ As an admin:
 - [x] **User Registration**
 - [x] **User Login**
 - [x] **Security**
-    - [x] Admin Role: Full Access
+    - [x] **Admin Role: Full Access**
       - [x] List All Solar Information
       - [x] Manually Add Solar Information
       - [ ] Delete Solar Information
-    - [x] User Role: Access to Personal Data and Search Features
+    - [x] **User Role: Access to Personal Data and Search Features**
       - [x] Search Solar Information
       - [x] Access to Change Password 
-    - [x] Guest Role: Limited Access to Public Pages 
-- [x] CSS Styling
-- [x] Display Search Results in Chronological Order
-- [x] Multi-Layer Dockerization
-- [x] Continuous Integration (CI)
+    - [x] **Guest Role: Limited Access to Public Pages**
+- [x] **CSS Styling**
+- [x] **Display Search Results in Chronological Order**
+- [x] **Multi-Layer Dockerization**
+- [x] **Continuous Integration (CI)**
   - [x] Integrate Docker Hub Image Update
-- [x] Integration Testing
-- [x] Unit Testing
+- [x] **Integration Testing**
+- [x] **Unit Testing**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
